@@ -5,6 +5,7 @@ using System.Text;
 
 namespace CafeteriaSolid.Pagos
 {
+    // [OCP] Principio Abierto/Cerrado
     public class PagarPuntos : IMetodoPago
     {
        public void ProcesarPago(double monto)

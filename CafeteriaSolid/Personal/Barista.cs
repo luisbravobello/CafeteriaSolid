@@ -5,7 +5,9 @@ using System.Text;
 
 namespace CafeteriaSolid.Personal
 {
-     public class Barista : IPreparar
+    // [SRP] Principio de Responsabilidad Única
+    // Esta clase tiene una sola razón para cambiar: Si cambia la forma de preparar café.
+    public class Barista : IPreparar
      {
         public void PrepararCafe()
         {
